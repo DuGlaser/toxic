@@ -1,11 +1,16 @@
+UV := ./.uv/bin/uv
+
 .PHONY: init
-init:
-	uv sync
+init: .uv
+	$(UV) sync
 
 .PHONY: run
-run:
-	uv run python app.py
+run: .uv
+	$(UV) run python app.py
 
 .PHONY: fix
-fix:
-	uv run ruff format
+fix: .uv
+	$(UV) run ruff format
+
+.uv:
+	curl -LsSf https://astral.sh/uv/install.sh | env UV_INSTALL_DIR="./.uv" INSTALLER_NO_MODIFY_PATH=1 sh
