@@ -21,7 +21,7 @@ jobs:
           standalone: true
           product-name: toxic
           company-name: duglaser
-          file=version: v1.0.0
+          file-version: v1.0.0
           file-description: 音声の入力を監視して一定の音量以上で警告する
           msvc: 14.3
 
