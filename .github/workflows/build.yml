@@ -18,7 +18,7 @@ jobs:
           nuitka-version: main
           script-name: app.py
           onefile: true
-          module: true
+          standalone: true
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
