@@ -17,6 +17,7 @@ jobs:
         with:
           nuitka-version: main
           script-name: app.py
+          onefile: true
           standalone: true
           product-name: toxic
           company-name: duglaser
