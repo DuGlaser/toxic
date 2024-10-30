@@ -1,0 +1,17 @@
+[project]
+name = "toxic"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "notify-py>=0.3.43",
+    "numpy>=2.1.2",
+    "plyer>=2.1.0",
+    "sounddevice>=0.5.1",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.7.1",
+]
